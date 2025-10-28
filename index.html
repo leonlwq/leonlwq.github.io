@@ -1,1 +1,19 @@
-20251028 16:46:00
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>显示当前时间</title>
+</head>
+<body>
+    <button onclick="showTime()">显示当前时间</button>
+    <p id="time"></p>
+
+    <script>
+        function showTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString();
+            document.getElementById("time").innerText = timeString;
+        }
+    </script>
+</body>
+</html>
